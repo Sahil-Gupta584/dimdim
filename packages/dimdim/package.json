@@ -1,0 +1,38 @@
+{
+  "name": "dimdim",
+  "version": "1.0.2",
+  "description": "A lightweight eye strain protector screen fader CLI utility",
+  "main": "dist/cli.js",
+  "bin": {
+    "dimdim": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:native": "cargo build --release",
+    "check-types": "tsc --noEmit",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "blinker",
+    "eye",
+    "strain",
+    "screen",
+    "fader",
+    "break",
+    "reminder"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist",
+    "bin/blinker.exe",
+    "README.md"
+  ]
+}
