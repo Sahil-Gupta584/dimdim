@@ -25,6 +25,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head><script
+  defer
+  data-website-id="6a4fe90e003d52c3ef48"
+  data-domain="dimdim-website.vercel.app"
+  src="https://www.insightly.live/script.js">
+  </script>
+        <script
+    src="https://cdn.databuddy.cc/databuddy.js"
+    data-client-id="5b123f41-71f1-4f00-b6d4-acca81b30a99"
+    crossOrigin="anonymous"
+    async
+  ></script>
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
