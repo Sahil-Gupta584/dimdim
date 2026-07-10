@@ -1,4 +1,4 @@
-.page {
+﻿.page {
   min-height: 100vh;
   background: #f5fbf8;
   color: #102018;
@@ -111,7 +111,7 @@
 }
 
 .title {
-  max-width: 48rem;
+  max-width: 12ch;
   font-family: var(--font-heading);
   font-size: clamp(3rem, 8vw, 4.5rem);
   font-weight: 900;
@@ -284,6 +284,7 @@
   min-width: 0;
   overflow-x: auto;
   white-space: nowrap;
+  line-height: 1.5;
 }
 
 .copyRow button {
@@ -444,6 +445,15 @@
     padding-top: 2.5rem;
     padding-bottom: 4rem;
   }
+
+
+  .panelBody {
+    padding: 1.25rem;
+  }
+
+  .storyCard {
+    gap: 1.5rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -466,11 +476,99 @@
     width: 100%;
   }
 
+  .pill {
+    max-width: 100%;
+    padding-inline: 0.625rem;
+    font-size: 0.8125rem;
+  }
+
+  .title {
+    max-width: 100%;
+    font-size: clamp(2.5rem, 14vw, 3.25rem);
+    line-height: 0.98;
+  }
+
+  .lede {
+    margin-top: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
   .stats {
     grid-template-columns: 1fr;
+    gap: 0.875rem;
+    margin-top: 2rem;
+    padding: 1rem 0;
+  }
+
+  .stats div {
+    display: grid;
+    gap: 0.125rem;
   }
 
   .storyCard {
-    padding: 1.5rem;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+  }
+
+  .storyCard h2 {
+    font-size: clamp(1.75rem, 9vw, 2.25rem);
+  }
+
+  .storyText {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .commandItem {
+    padding: 1rem;
+  }
+
+  .commandItem code {
+    word-break: break-word;
+    white-space: normal;
+  }
+
+  .copyRow {
+    align-items: flex-start;
+  }
+
+  .copyRow code {
+    white-space: normal;
   }
 }
+
+@media (max-width: 420px) {
+  .header {
+    align-items: flex-start;
+  }
+
+  .brand {
+    font-size: 1rem;
+  }
+
+  .logoMark {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .logoMark svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .panelBody {
+    padding: 1rem;
+  }
+
+  .copyRow {
+    flex-direction: column;
+  }
+
+  .copyRow button {
+    width: 100%;
+    height: 2.5rem;
+  }
+}
+
