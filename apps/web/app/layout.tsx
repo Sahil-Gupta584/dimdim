@@ -12,7 +12,9 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
 });
 
-export const metadata: Metadata = {`r`n  metadataBase: new URL("https://dimdim-website.vercel.app"),`r`n  title: "dimdim - Windows eye-strain break reminders",
+export const metadata: Metadata = {
+  metadataBase: new URL("https://dimdim-website.vercel.app"),
+  title: "dimdim - Windows eye-strain break reminders",
   description:
     "A lightweight npm CLI that runs a native Windows screen fader to remind you to blink and rest your eyes.",
 };
@@ -43,4 +45,5 @@ export default function RootLayout({
     </html>
   );
 }
+
 
